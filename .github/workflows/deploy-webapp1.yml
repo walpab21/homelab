@@ -16,7 +16,8 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-    - name: Build and push to Dockerhub
+    - name: Build and push
       uses: docker/build-push-action@v4
       with:
-        tags: ${{ github.sha }}
+        push: true
+        tags: walpab21/homelab:latest
