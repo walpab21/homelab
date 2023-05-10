@@ -26,7 +26,7 @@ jobs:
       uses: steebchen/kubectl@v2.0.0
       with:
         config: ${{ secrets.KUBE_CONFIG_DATA }}
-        command: set image --record deployment/nginx-deployment container=${{ github.repository }}:${{ github.sha }}
+        command: set image deployment/nginx-deployment nginx=${{ github.repository }}:${{ github.sha }}
 
     - name: Verify deployment
       uses: steebchen/kubectl@v2.0.0
