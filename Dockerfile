@@ -1,3 +1,3 @@
-FROM nginx:1.19-alpine
+FROM nginx:alpine
 
 ADD index.html /usr/share/nginx/html
