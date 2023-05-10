@@ -18,4 +18,4 @@ spec:
       - name: webapp1
         image: walpab21/homelab:latest
         ports:
-        - containerPort: 8081
+        - containerPort: 80
