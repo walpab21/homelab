@@ -20,7 +20,7 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: walpab21/homelab:latest
+        tags: walpab21/homelab:latest,walpab21/homelab:${{ github.sha }}
 
     - name: Deploy to cluster
       uses: steebchen/kubectl@v2.0.0
