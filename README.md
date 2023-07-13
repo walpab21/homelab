@@ -1,2 +1,2 @@
-# homelab
+# HomeLab
 testing purposes only
